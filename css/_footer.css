@@ -1,0 +1,9 @@
+footer{
+
+}
+
+footer .footer-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

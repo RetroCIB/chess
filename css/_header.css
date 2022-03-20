@@ -1,0 +1,28 @@
+header{
+    background-color: antiquewhite;
+    padding: 1rem 0;
+}
+
+header .header_container{
+    display:flex;
+    justify-content: space-between;
+    align-content: center; 
+}
+
+
+header .header__logo{ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header .header__logo img{
+    width:80px;
+    
+}
+
+header .header__logo span{
+    font-weight: bold;
+    font-size: 3rem; 
+    margin-left:1.5rem;
+}
