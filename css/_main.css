@@ -38,18 +38,23 @@ main #game .game_container{
 } 
  
 main #game #game_table {
+    position: relative;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0 0 3rem 3rem;
-
-    width: calc( (var(--cell-size)) * 8 + 2px );
-    height: calc( (var(--cell-size) ) * 8 + 2px );
-
+    margin: 0 0 3rem 3rem;  
+    width: calc( (var(--cell-size)) * 8 + 2px ) !important;
+    height: calc( (var(--cell-size) ) * 8 + 2px ) !important; 
     border:1px solid black;
 }
+main #game #game_table .cell-number,
+main #game #game_table .cell-letter{ 
+    position:absolute;
+    display:block;
+    line-height: 1;
+}  
 main #game #game_table .cell{
     display:block;
     position:relative;

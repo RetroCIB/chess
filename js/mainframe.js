@@ -22,6 +22,26 @@ class Game {
                 table_el.appendChild(cell_el);
             }
         }
+        // trasare numere
+        for(let row=8; row>=1; row--){ 
+                const cell_el = document.createElement('div');
+                cell_el.classList.add('cell-number');
+                cell_el.style.top = `calc( 100% - ((100% / 8) * ${row}) + (var(--cell-size) / 4 * 1.7) )`;
+                cell_el.style.left = `-3rem`;
+                cell_el.innerHTML = row;
+
+                table_el.appendChild(cell_el); 
+        } 
+        // trasare litere
+        for(let col =1; col <=8; col++){ 
+                const cell_el = document.createElement('div');
+                cell_el.classList.add('cell-letter');
+                cell_el.style.left = `calc( ((100% / 8) * ${col-1}) + (var(--cell-size) / 4 * 1.7) )`;
+                cell_el.style.bottom = `-3rem`;
+                cell_el.innerHTML =String.fromCharCode( ('A').charCodeAt(0)   + col - 1 );
+
+                table_el.appendChild(cell_el); 
+        }
     }
 }
 
