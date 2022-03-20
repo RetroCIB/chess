@@ -40,3 +40,24 @@
         width: calc( 1200px - (1.5rem * 2) );
     }
 }
+
+/* buttons */
+button{
+    border:1px solid var(--color_text);
+    border-radius: 0;
+    font-family: 'Gloria Hallelujah';
+    padding: .3rem 5rem;
+    margin: 1rem auto;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;  
+    background-color: var(--color_text);
+    color: var(--color_background);
+
+}
+button:active{
+    background-color: var(--color_background);
+    color: var(--color_text);
+}
