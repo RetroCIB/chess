@@ -1,16 +1,16 @@
-import {MainFrame} from "./mainframe.js";
+import { MainFrame } from "./mainframe.js";
 
-
-
-window.addEventListener('DOMContentLoaded', function(){    
+window.addEventListener('DOMContentLoaded', function () {
     // 
-    const button_start_new_game = document.querySelector('button#start_new_game'); 
-    button_start_new_game.addEventListener('click', function(){
-         MainFrame.hideStartNewContainer();
-         MainFrame.showGameContainer();
-    }) 
+    const button_start_new_game = document.querySelector('button#start_new_game');
+    button_start_new_game.addEventListener('click', function () { 
+        MainFrame.initializeGame();
+
+        MainFrame.hideStartNewContainer();
+        MainFrame.showGameContainer(); 
+    })
 
     // 
     MainFrame.showStartNewContainer();
-    MainFrame.hideGameContainer(); 
+    MainFrame.hideGameContainer();
 });

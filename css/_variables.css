@@ -1,4 +1,6 @@
 :root{
     --color_text: #18181b;
     --color_background: #faebd7;
+
+    --cell-size: 70px;
 }
