@@ -2,18 +2,31 @@ main{
     min-height: calc( 100vh - 120px);
 }
 
+/* start new */
 main #start_new{
+    display:none;
     padding: 8rem 0;
 }
-
+main #start_new.active{
+    display:block;
+} 
 main #start_new .start_new_container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
+} 
 main #start_new .start_new_container span{
     font-size: 3rem;
     margin-bottom:8rem;
 }
+
+/* game */
+
+main #game{
+    display:none;
+    padding: 8rem 0;
+}
+main #game.active{
+    display:block;
+} 

@@ -11,6 +11,7 @@
     <link rel="icon" href="img/favicon.jpg" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
+    <script src="js/main.js" type="module"></script>
 </head>
 
 <body>
@@ -31,7 +32,16 @@
                 <span>Start new game?</span>
                 <button id="start_new_game">Start</button>
             </div>
-        </div> 
+        </div>
+
+        <!-- game in progress -->
+        <div id="game">
+            <div class="container game_container">
+                <div id="game_chart">game_chart</div>
+                <div id="game_moves">game_statistic</div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
@@ -40,7 +50,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    
 </body>
 
 </html>
